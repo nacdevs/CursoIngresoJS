@@ -20,7 +20,7 @@ function comenzar()
 
 	op=['+','-','*','/'];
 
-	alert(op[numOp]);
+	alert(numOp);
 
 	op[numOp];
 	
