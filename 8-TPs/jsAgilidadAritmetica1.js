@@ -18,9 +18,9 @@ function comenzar()
 	numeroB = Math.floor((Math.random() * 10) + 1);
 	numOp= Math.floor((Math.random() * 4) + 1);
 
-	op=[+,-];
+	op=['+','-','*','/'];
 
-	alert(op);
+	alert(op[numOp]);
 
 	op[numOp];
 	
