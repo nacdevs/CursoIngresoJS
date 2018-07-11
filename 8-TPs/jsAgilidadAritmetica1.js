@@ -9,7 +9,20 @@ se debe informar si el resultado es el correcto o no.
 var respuesta;
 function comenzar()
 {
+	var numeroA;
+	var numeroB;
+	var numOp;
+	var op;
 
+	numeroA = Math.floor((Math.random() * 10) + 1);
+	numeroB = Math.floor((Math.random() * 10) + 1);
+	numOp= Math.floor((Math.random() * 4) + 1);
+
+	op=[+,-];
+
+	alert(op);
+
+	op[numOp];
 	
 
 }//FIN DE LA FUNCIÓN
