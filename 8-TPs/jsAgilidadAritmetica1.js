@@ -13,21 +13,52 @@ function comenzar()
 	var numeroB;
 	var numOp;
 	var op;
+	var op2;
 
 	numeroA = Math.floor((Math.random() * 10) + 1);
 	numeroB = Math.floor((Math.random() * 10) + 1);
-	numOp= Math.floor((Math.random() * 4) + 1);
+	numOp= Math.floor((Math.random() * 4) + 0);
 
 	op=['+','-','*','/'];
+	op2=op[numOp];
 
-	alert(numOp);
+	document.getElementById('PrimerNumero').value=numeroA;
+	document.getElementById('SegundoNumero').value=numeroB;
+	document.getElementById('Operador').value=op2;
 
-	op[numOp];
-	
+
+	switch(op2){
+		case '+':
+			respuesta = numeroA+numeroB;			
+			break;
+
+		case '-':
+			respuesta = numeroA-numeroB;
+			break;
+		
+		case '/':
+			respuesta = numeroA/numeroB;
+			break;
+
+		case '*':
+			respuesta = numeroA*numeroB;
+			break;		
+	}
 
 }//FIN DE LA FUNCIÓN
+
+
 function Responder()
 {
+	var userResp;
+
+	userResp=document.getElementById('Respuesta').value;
+	userResp=parseInt(userResp);
 	
+	if(userResp==respuesta){
+		alert("correcto");
+	}else{
+		alert("incorrecto, la respuesta es: "+respuesta)
+	}
 
 }//FIN DE LA FUNCIÓN
