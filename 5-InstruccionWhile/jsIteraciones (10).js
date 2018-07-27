@@ -28,9 +28,6 @@ function mostrar()
 			if(numeroIngresado % 2 == 0){
 				contadorPar++;
 			}
-
-
-
 		}
 
 		if (numeroIngresado<0) {
@@ -41,10 +38,12 @@ function mostrar()
 				contadorPar++;
 			}
 
-
-
 		}else{
-			contadorCero++
+			if(numeroIngresado==0){
+				contadorCero++;	
+				contadorPar++;
+			}
+			
 		}
 			/////CONTINUARA ALGUN DIA
 
@@ -56,7 +55,7 @@ function mostrar()
 
 	document.write('<h1 style="font-family:Arial;">Resultados</h1><br>'+"Suma de Negativos: "+SumaNeg+"<br>"+"Suma de Positivos: "+SumaPos+"<br> Cantidad de positivos: "+contadorPos+"<br>");
 	document.write("Cantidad Negativos: "+ contadorNeg+"<br>"+"Cantidad Ceros: "+ contadorCero+ "<br>"+"Cantidad de num pares: "+contadorPar+"<br>")	;
-	document.write("Promedio de positivos: "+ promedioPositivos+"<br>"+"Diferencia entre positivos y negativos: "+diferencia);
+	document.write("Promedio de positivos: "+ promedioPositivos+"<br>"+"Promedio de negativos: "+ promedioNegativos+"<br>"+"Diferencia entre positivos y negativos: "+diferencia);
 
 
 
